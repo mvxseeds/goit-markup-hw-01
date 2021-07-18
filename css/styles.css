@@ -1,0 +1,88 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent: #2196f3;
+  --lighter: #ffffff;
+  --footer-links-lighter: rgba(255, 255, 255, 0.6);
+  --bg-dark: #2f303a;
+}
+
+body {
+  background-color: var(--lighter);
+  color: var(--primary-text-color);
+}
+
+/* negating basic tag effects */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Nav */
+
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent);
+}
+
+.contacts .link {
+  color: inherit;
+}
+
+/* Header logo */
+
+.logo {
+  color: var(--secondary-text-color);
+}
+
+.logo > span {
+  color: var(--accent);
+}
+
+/* Sections */
+
+/* Hero section */
+
+/* Button */
+.hero .button {
+  color: var(--lighter);
+  background-color: var(--accent);
+}
+
+.hero .section-title {
+  color: #ffffff;
+}
+
+.section-title,
+.list .title {
+  color: var(--secondary-text-color);
+}
+
+/* Background decoration hero+footer */
+
+.hero,
+.footer {
+  background-color: var(--bg-dark);
+}
+
+/* Footer */
+.footer .logo {
+  color: var(--lighter);
+}
+
+.footer .contact {
+  color: var(--footer-links-lighter);
+}
